@@ -1,0 +1,754 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url('/Fonts/RobotoSlab/robotoslab-variablefont_wght-webfont.woff');
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url('/Fonts/RobotoSlab/Roboto/robotocondensed-regular-webfont.woff');
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('/Fonts/RobotoSlab/OpenSans/webfontkit-20210502-212131/opensans-regular-webfont.woff');
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url('./Images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 100%;
+}
+
+nav {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    color: #142b47;
+    font-family: Roboto Slab;
+    justify-content: space-between;
+}
+
+.searchicon {
+    color: #142b47;
+    border-style: solid;
+    border-color: #142b47;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.ital {
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.sitenamep {
+    font-weight: bold;
+}
+
+.links, .leftnav, .rightnav {
+    display: flex;
+}
+
+.links {
+    background-color: #e1e5eb;
+    justify-content: center;
+}
+
+.leftnav {
+    align-items: flex-start;
+}
+
+.rightnav p {
+    margin: 15px;
+}
+
+.linkarea {
+    background-color: #fff;
+    padding: 35px 70px;
+    text-align: center;
+    font-family: Open Sans;
+    margin: 20px;
+    color: #294569;
+}
+
+.linkarea p {
+    font-weight: bold;
+}
+
+.colorlogo, .bwlogo {
+    height: 100px;
+    width: 100px;
+}
+
+.bwlogo {
+    margin-top: 15px;
+}
+
+.colorlogo {
+    margin: 10px;
+}
+
+.headeroverlay {
+    text-align: center;
+    position:static;
+} 
+
+.headeroverlay p {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 100px 400px 20px 400px;
+}
+
+.search {
+    font-style: italic;
+    font-size: 20px;
+    text-align: left;
+}
+
+.searchbutton, .viewupdates, .allevents {
+    padding: 13px 30px;
+    color: #fff;
+    background-color: #0273c1;
+}
+
+.searchbutton:hover, .searchexpandbutton:hover, .viewupdates:hover, .allevents:hover {
+    background-color: #00558f;
+}
+
+.searchbutton:visited {
+    background-color: #004777;
+}
+
+.viewupdates {
+    margin-top: 25px;
+}
+
+input {
+    padding: 10px 110px;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.bottomhalf {
+    margin: 10px 205px;
+}
+
+.services, hr {
+    color: #225089;
+}
+
+.services h1 {
+    font-size: 32px;
+    font-family: Open Sans;
+    font-weight: bold;
+    margin-top: 45px;
+    font-family: Open Sans;
+}
+
+.service a, .update a {
+    color: #127cc4;
+    font-weight: bold;
+}
+
+.updates hr {
+    height: 5px;
+    background-color: #8C6910;
+    width: 50px;
+    margin-left: 0;
+}
+
+.calendarstarthr {
+    height: 5px;
+    background-color: #8C6910;
+    width: 50px;
+    margin-left: 0;
+}
+
+.calendarname {
+    font-weight: bold;
+}
+
+.calendar {
+    margin: 20px;
+}
+
+.services hr {
+    height: 10px;
+    background-color: #225089;
+}
+
+.serviceflex {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    margin: 0 0px;
+}
+
+.service a {
+    font-family: Open Sans;
+}
+
+.updatecalendar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+footer {
+    background-color: #1b3a61;
+    display: flex;
+    color: #fff;
+    justify-content: space-evenly;
+    font-family: Open Sans;
+}
+
+.footernav1, .footernav2, .footernav3 {
+    margin-top: 30px;
+}
+
+.footername {
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Open Sans;
+    font-size: 30px;
+    color: #225089;
+    font-weight: bold;
+}
+
+.dateblock {
+    background-color: #8C6910;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    height: 50px;
+}
+
+.date {
+    display: flex;
+    font-family: Open Sans;
+    margin-top: 50px;
+}
+
+.dateinfo {
+    margin: 0 10px;
+}
+
+.updates {
+    font-family: Open Sans;
+}
+
+.datestatus {
+    background-color: #D2B859;
+    width: 20%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.datestatuscancelled {
+    background-color: #E9261D;
+    color: #fff;
+    text-align: center;
+    width: 20%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.datestatus, .datestatuscancelled {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.datelocation, .datetime, .datecontact {
+    display: flex;
+    margin: 0px;
+}
+
+.updateinfo {
+    margin-bottom: 1px;
+}
+
+.updated {
+    background-color: #666666;
+    color: #fff;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.update {
+    margin-top: 50px;
+}
+
+.published {
+    font-weight: bold;
+}
+
+.pubdetails {
+    display: flex;
+    margin-top: 1px;
+}
+
+.pubdetails p {
+    margin-right: 5px;
+}
+
+.update a {
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+
+#hamburger {
+    margin-top: 45px;
+}
+
+.icon {
+    text-align: center;
+    background-color: #2f68ad;
+    color: #fff;
+    font-family: Open Sans;
+    width: 70px;
+    height: 120px;
+    text-decoration: none;
+}
+
+.icon:hover {
+    background-color: #00558f;
+}
+
+.icon p {
+    font-family: Open Sans;
+    margin-top: -2px;
+}
+
+.topnav {
+    text-align: right;
+    margin: 50px 75px 100px 0;
+}
+
+.topnav a {
+    color: #737373;
+    text-decoration: none;
+}
+
+h3 {
+    color: #8d9bb0;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.headersearch {
+    color: #fff;
+}
+
+.headerhr {
+    margin-top: -5px;
+    height: 10px;
+    color: #1a395f;
+    background-color: #1a395f;
+    margin-bottom: -5px;
+    border-color: #1a395f;
+}
+
+.date a {
+    margin-right: 15px;
+}
+
+#mappin, #clock, #phoneicon {
+  color: #8C6910;
+}
+
+.day {
+    font-size: 26px;
+}
+
+.month, .day {
+    margin: -2px;
+}
+
+.datehr {
+    color: #666666;
+    height: 1px;
+    background-color: #666666; 
+}
+
+.allevents {
+    margin-top: 30px;
+}
+
+#arrowicon {
+    color: #0977c2;
+    background-color: #c2d6e6;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.hamburgerunfold {
+    margin-top: -10px;
+    display: none;
+    justify-content: space-evenly;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    font-family: Open Sans;
+} 
+
+.menuhr {
+    color: #314d6f;
+    background-color: #314d6f;
+}
+
+.hamburgerunfold p {
+    color: #314d6f;
+    line-height: 20px;
+    font-family: Open Sans;
+}
+
+h4 {
+    letter-spacing: 1px;
+    color: #314d6f;
+    font-weight: bold;
+    font-family: Open Sans;
+}
+
+.hrnavexpand {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    color: #8C6910;
+    height: 2px;
+    background-color: #8C6910;
+    width: 20%;
+    margin-left: 0;
+}
+
+.navdetailexpand {
+    margin: 0 10px;
+    float: left;
+    background-color: #fff;
+    width: 20%;
+}
+
+.leftexpand {
+    width: 20%;
+    text-align: center;
+    padding: 0 45px;
+    height: 470px;
+    float: left;
+    background-color: #f3f6fa;
+}
+
+.leftexpand p {
+    font-family: Open Sans;
+    font-weight: bold;
+}
+
+.navdetailexpand p {
+  font-size: 14px;
+  margin: 3px auto;
+}
+
+html.nav-is-open .hamburgerunfold {
+    display: block;
+}
+
+html.nav-is-open .headerhr {
+    position: fixed;
+    overflow: hidden;
+}
+
+html.search-is-open .searchexpanded {
+    display: block;
+}
+
+html.search-is-open .headeroverlay {
+    position: fixed;
+    overflow: hidden;
+}
+
+html.search-is-open .rightnav {
+    align-items: flex-end;
+}
+
+html.search-is-open .searchicon {
+    background-color: #0074c1;
+    border-style: none;
+    border-radius: 0;
+}
+
+.searchexpanded {
+    background-color: #0074c1;
+    padding: 10px;
+    width: 35%;
+    float: right;
+    display: none;
+    margin-top: -40px;
+    margin-right: 15px;
+}
+
+.searchexpandinput {
+    font-family: Open Sans;
+    font-size: 15px;
+    width: 28%;
+}
+
+.searchexpandbutton {
+    background-color: #0074c1;
+    border-width: 1px;
+    border-color: #fff;
+    color: #fff;
+    font-family: Open Sans;
+    padding: 10px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+/* 
+@media all and (min-width: 320px) and (max-width: 500px) {
+    .sitename p {
+        font-size: 14px;
+    }
+} */
+
+@media all and (min-width: 0px) and (max-width: 800px) {
+    .navdetailexpand {
+        width: 30%;
+        margin: 6px;
+    }
+    
+    .leftexpand {
+        width: 20%;
+        padding: 0 4px;
+        font-size: 12px;
+        height: 720px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    .icon {
+        height: 157px;
+        width: 80px;
+    }
+    
+    #icon p {
+        font-size: 9px;
+    }
+
+    .sitenamep {
+        font-size: 13px;
+    }
+    
+    .ital {
+        font-size: 11px;
+    }
+
+    .rightnav p:not(.searchlink) {
+        display: none !important;
+    }
+
+    .headeroverlay {
+        margin: 0;
+        text-align: center;
+    }
+
+    .headerhr {
+        height: 8px;
+    }
+
+    .headeroverlay p {
+        font-size: 20px;
+        margin: 70px 30px;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+    .linkarea {
+        margin: 10px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .linkimage {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .search {
+        padding: 4px 2px;
+    }
+
+    .searchbutton {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    .bottomhalf {
+        margin: 30px 40px;
+    }
+
+    .service p, .calendarname, .update a {
+        font-size: 14px;
+    }
+
+    .updateinfo {
+        font-size: 13px;
+    }
+
+    .pubdetails {
+        font-size: 14px;
+    }
+
+    .datelocation p, .datetime p, .datecontact p {
+        font-size: 13px;
+    }
+
+    .bottomhalf {
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .calendar, .updates {
+        margin: 5px;
+    }
+
+    .updates hr, .calendarstarthr {
+        width: 25%;
+    }
+
+    .updatecalendar {
+        flex-direction: column;
+    }
+
+    .viewupdates {
+        margin-bottom: 60px;
+    }
+
+    .topnav {
+        margin: 30px 10px 20px auto;
+    }
+
+    .footernav1 p {
+        font-size: 14px;
+    }
+
+    .footernav1, .footernav2, .footernav3 {
+        margin: 10px;
+    }
+
+    .footernav2 p, .footernav3 p {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .bwlogo, .colorlogo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .colorlogo:hover {
+        z-index: -1;
+        opacity: 0.1;
+    }
+
+    .datestatus, .datestatuscancelled {
+        width: 60px;
+    }
+
+    .searchexpanded {
+        width: 50%;
+        margin-top: -60px;
+        text-align: center;
+        position: relative;
+    }
+
+    .searchbuttonexpanded {
+        padding: 2px;
+    }
+
+    .searchexpandinput {
+        width: 100px;
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+}
+
+@media all and (min-width: 800px) and (max-width: 1200px) {
+    .icon {
+        height: 138px;
+    }
+
+    .headeroverlay {
+        margin: 100px 20px;
+        text-align: center;
+    }
+
+    .headeroverlay p {
+        margin: 15px 90px;
+    }
+
+    .search {
+        margin-top: 0px;
+        padding: 5px 15px;
+    }
+
+    .linkarea {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .linkarea p {
+        font-size: 15px;
+    }
+
+    .linkimage {
+        width: 45px;
+        height: 45px;
+    }
+
+    .bottomhalf {
+        margin: 20px 40px;
+    }
+
+    .datestatuscancelled {
+        width: 30%;
+    }
+
+    .footernav1, .footernav2, .footernav3 {
+        margin: 15px;
+    }
+
+    .searchexpanded {
+        width: 50%;
+    }
+
+    .searchexpandinput {
+        padding: 12px 50px;
+        font-size: 11px;
+    }
+}
